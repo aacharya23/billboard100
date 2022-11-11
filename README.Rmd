@@ -33,6 +33,17 @@ You can install the development version of Desktop like so:
 # FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
 ```
 
+```{r}
+#scraper code
+billboard <- webpage %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  .[[1]] %>%
+  html_table()
+
+```
+
+
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
