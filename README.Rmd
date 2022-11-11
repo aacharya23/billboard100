@@ -1,6 +1,12 @@
 ---
 output: github_document
+<<<<<<< HEAD
 author: 'Amrita Acharya, Brianna Mateo '
+=======
+author: 'Amrita Acharya'
+author: 'Brianna Mateo '
+author: 'Lillian Fok'
+>>>>>>> 71787018d220223c2870f9fa1169c0b058b02a8c
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -30,6 +36,17 @@ You can install the development version of Desktop like so:
 ``` r
 # FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
 ```
+
+```{r}
+#scraper code
+billboard <- webpage %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  .[[1]] %>%
+  html_table()
+
+```
+
 
 ## Example
 
