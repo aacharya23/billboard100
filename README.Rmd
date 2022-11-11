@@ -1,8 +1,12 @@
 ---
 output: github_document
+<<<<<<< HEAD
+author: 'Amrita Acharya, Brianna Mateo '
+=======
 author: 'Amrita Acharya'
 author: 'Brianna Mateo '
 author: 'Lillian Fok'
+>>>>>>> 71787018d220223c2870f9fa1169c0b058b02a8c
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -49,7 +53,6 @@ billboard <- webpage %>%
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(Desktop)
 ## basic example code
 ```
 
