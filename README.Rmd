@@ -16,55 +16,34 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Desktop
+## Overview 
+The Billboard  R package contains a dataset from the Billboard Hot 100 and a function to visualize the top 5 artists of all time. This package has dependencies on tidyverse and ggplot2 in order to 
 
-<!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/Desktop)](https://CRAN.R-project.org/package=Desktop)
-<!-- badges: end -->
+##Purpose 
 
-The goal of Desktop is to ...
+##Target Audience 
 
-## Installation
+##Installation 
 
-You can install the development version of Desktop like so:
+## Function 
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
-```
+# Description 
 
-```{r}
-#scraper code
-billboard <- webpage %>%
-  read_html() %>%
-  html_nodes("table") %>%
-  .[[1]] %>%
-  html_table()
+#Purpose
 
-```
+#Dependencies/Setup 
 
+#Arguments 
 
-## Example
+#Result 
 
-This is a basic example which shows you how to solve a common problem:
+#Code 
 
-```{r example}
-library(Desktop)
-## basic example code
-```
+#Examples 
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+#Testing 
 
-```{r cars}
-summary(cars)
-```
+## Package Proposal 
+This package will scrape data from the billboard hot 100 website and change depending on the week that the user utilizes the package. Unlike this current phase, the phase III package will not have a dataset that it's working from. Users can perform analyzes of the scraped data similarly to the current package version. 
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+##
