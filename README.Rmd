@@ -3,6 +3,7 @@ output: github_document
 author: 'Amrita Acharya'
 author: 'Brianna Mateo '
 author: 'Lillian Fok'
+
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -35,7 +36,15 @@ The Billboard  R package contains a dataset from the Billboard Hot 100 and a fun
 
 #Arguments 
 
+<<<<<<< HEAD
 #Result 
+=======
+```{r example}
+## basic example code
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+>>>>>>> 0fb182309a379a66094cb01b57696cfac8b94e94
 
 #Code 
 
