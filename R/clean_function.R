@@ -14,21 +14,22 @@
 #' TopN_BB100(data=BB100, 10)
 #'
 #' # Find the top 20 songs of all time
-#' TopN_BB100(data= BB100, 20)
+#' TopN_BB100(data = BB100, 20)
 #'
-#' @importFrom magrittr "%>%"
 #' @import dplyr
 #' @export
+TopN_BB100 <- function(data = BB100, x) {
 
 
+  BB100 <- charts %>%
+    select(-c(rank, date, last.week, weeks.on.board, peak.rank)) %>%
+    group_by(artist) %>%
+    summarize(count=n()) %>%
+    dplyr::arrange(desc(count))
 
-TopN_BB100 <- function(data = Top_BB100, x) {
   return(top_n(data, n = (x), wt = count))
+
 }
 
-BB100<-charts %>%
-  select(-c(rank,date,`last-week`,`weeks-on-board`,`peak-rank`)) %>%
-  group_by(artist) %>%
-  summarize(count=n()) %>%
-  dplyr::arrange(desc(count))
+
 
