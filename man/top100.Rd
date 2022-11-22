@@ -3,7 +3,7 @@
 \docType{data}
 \name{top100}
 \alias{top100}
-\title{Billboard Top 100 data set}
+\title{Billboard Hot 100 data set}
 \format{
 \subsection{\code{top100}}{
 
@@ -27,6 +27,6 @@ A data frame with 330,087 rows and 7 columns:
 top100
 }
 \description{
-Top 100 Billboard songs from 08-04-1958 to 11-06-2021.
+Billboard Hot 100 songs from 08-04-1958 to 11-06-2021.
 }
 \keyword{datasets}

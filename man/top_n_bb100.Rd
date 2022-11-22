@@ -4,7 +4,7 @@
 \alias{top_n_bb100}
 \title{Find top x songs of all time}
 \usage{
-top_n_bb100(data = BB100, x)
+top_n_bb100(data = top100, x)
 }
 \arguments{
 \item{data}{the billboard dataset of all top songs from all time}
@@ -12,7 +12,7 @@ top_n_bb100(data = BB100, x)
 \item{x}{the number that the user inputs to find the top number of songs}
 }
 \value{
-'TopN_BB100' returns a dataframe with x number of rows of top songs over time based on the user input
+'top_n_bb100' returns a dataframe with x number of rows of top songs over time
 }
 \description{
 Find top x songs of all time
@@ -21,9 +21,9 @@ Find top x songs of all time
 library(billboard100)
 
 # Find the top 10 songs of all time
-TopN_BB100(data=BB100, 10)
+top_n_bb100(data=top100, 10)
 
 # Find the top 20 songs of all time
-TopN_BB100(data = BB100, 20)
+top_n_bb100(data = top100, 20)
 
 }
