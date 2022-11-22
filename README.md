@@ -19,33 +19,37 @@ music stats. This package can easily be used for data analysis and
 provide actionable insights for artists, record labels, or anyone whose
 interested in the Billboard Hot 100.
 
-\##Installation
+## Installation 
+
+```{r}
+devtools::install_github("aacharya23/billboard100")
+```
+
+## Datasets Included 
+* top100: A dataset that contains the date, song name, artist, current rank and past rank of the Billboard Hot 100 songs. 
 
 ## Function
+
+Functions inside the package:
+
+* top_n_bb100: return the top ’n’ artist whose made it on the Billboard Hot 100. 
+
+
+Load billboard100 R package. 
+
+```{r}
+#library(billboard100)
+```
+
+Run the function to generate a table with N number of songs 
+
+```{r}
+#top_n_bb100(data = bb100, 10)
+```
 
 Functions inside the package: \* TopN_BB100: return the top ’n’ artist
 whose made it on the Billboard Hot 100.
 
-# Description
-
-\#Purpose
-
-\#Dependencies/Setup
-
-\#Arguments
-
-\#Result
-
-## basic example code
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-\#Code
-
-\#Examples
-
-\#Testing
 
 ## Package Proposal
 
