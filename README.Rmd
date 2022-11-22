@@ -43,7 +43,7 @@ Functions inside the package:
 #Arguments 
 
 ```{r}
-
+library(dplyr)
 BB100<-charts %>% 
   select( -rank,-date,-`last-week`,-`weeks-on-board`,-`peak-rank`) %>% 
 group_by(artist) %>% 
