@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(Desktop)
+library(billboard_100)
 
-test_check("Desktop")
+test_check("billboard_100")

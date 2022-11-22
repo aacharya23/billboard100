@@ -1,4 +1,4 @@
-Package: Desktop
+Package: billboard_100
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
@@ -15,3 +15,5 @@ RoxygenNote: 7.2.1
 Depends: 
     R (>= 2.10)
 LazyData: true
+Imports: 
+    magrittr
