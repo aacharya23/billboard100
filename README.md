@@ -47,10 +47,6 @@ Run the function to generate a table with N number of songs
 #top_n_bb100(data = bb100, 10)
 ```
 
-Functions inside the package: \* TopN_BB100: return the top ’n’ artist
-whose made it on the Billboard Hot 100.
-
-
 ## Package Proposal
 
 This package will scrape data from the billboard hot 100 website and
