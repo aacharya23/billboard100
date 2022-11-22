@@ -369,60 +369,81 @@ pre code {
 <p>output: github_document</p>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
-<p>The Billboard R package contains a dataset from the Billboard Hot 100
-and a function to find the top number of artists of all time. This
-package has dependencies on tidyverse to clean the dataset and take the
-user inputted number to generate a table with a top number of songs.</p>
-</div>
-<div id="purpose" class="section level2">
-<h2>Purpose</h2>
-<p>Billboard_100 is an R package that contains datasets of the Billboard
-Chart Hot 100 acquired from the Billboard website, featuring the Hot 100
-charts for every week since its first premiere on Monday, Aug. 4, 1958.
-Finding data on music, artist, and chart numbers can be very daunting
-and a lot of time spent on Google. We have made Billboard_100 to keep
-everything all in one place and be able to pull data from the dataset
-easily.</p>
+<p>billboard100 contains data from the Billboard Hot 100 dataset that
+contains all the songs that made this popular music chart since 1958.
+The functions in the package allow users to analyze the top N songs of
+all time. The package currently contains dependencies on dplyr.</p>
 </div>
 <div id="target-audience" class="section level2">
 <h2>Target Audience</h2>
 <p>This package was made for anyone who find value in music stats. This
 package can easily be used for data analysis and provide actionable
-insights for artists, record labels, or anyone whose interested in the
+insights for artists, record labels, or anyone who’s interested in the
 Billboard Hot 100.</p>
 </div>
 <div id="installation" class="section level2">
 <h2>Installation</h2>
 <pre class="r"><code>devtools::install_github(&quot;aacharya23/billboard100&quot;)
-#&gt; Skipping install of &#39;billboard100&#39; from a github remote, the SHA1 (ae495046) has not changed since last install.
-#&gt;   Use `force = TRUE` to force installation</code></pre>
+#&gt; Downloading GitHub repo aacharya23/billboard100@HEAD
+#&gt; vctrs (0.5.0 -&gt; 0.5.1) [CRAN]
+#&gt; Installing 1 packages: vctrs
+#&gt; 
+#&gt; The downloaded binary packages are in
+#&gt;  /var/folders/0v/45nxndbd42v5v93r37g7qgj80000gn/T//RtmpfkvKUz/downloaded_packages
+#&gt;   
+   checking for file ‘/private/var/folders/0v/45nxndbd42v5v93r37g7qgj80000gn/T/RtmpfkvKUz/remotesb0b17048bbbe/aacharya23-billboard100-a40c640/DESCRIPTION’ ...
+  
+✔  checking for file ‘/private/var/folders/0v/45nxndbd42v5v93r37g7qgj80000gn/T/RtmpfkvKUz/remotesb0b17048bbbe/aacharya23-billboard100-a40c640/DESCRIPTION’ (385ms)
+#&gt; 
+  
+─  preparing ‘billboard100’: (343ms)
+#&gt; 
+  
+   checking DESCRIPTION meta-information ...
+  
+✔  checking DESCRIPTION meta-information
+#&gt; 
+  
+─  checking for LF line-endings in source and make files and shell scripts
+#&gt; 
+  
+─  checking for empty or unneeded directories
+#&gt; 
+  
+─  building ‘billboard100_0.0.0.9000.tar.gz’
+#&gt; 
+  
+   
+#&gt; </code></pre>
 </div>
 <div id="datasets-included" class="section level2">
 <h2>Datasets Included</h2>
 <ul>
-<li>top100: A dataset that contains the top Billboard 100 songs of all
-time.</li>
+<li>top100: A dataset that contains the date, song name, artist, current
+rank and past rank of the Billboard Hot 100 songs.</li>
 </ul>
 </div>
-<div id="functions-included" class="section level2">
-<h2>Functions Included</h2>
+<div id="function" class="section level2">
+<h2>Function</h2>
+<p>Functions inside the package:</p>
 <ul>
-<li>TopN_BB100: return the top ’n’ artist whose made it on the Billboard
-Hot 100.</li>
+<li>top_n_bb100: return the top ’n’ artist whose made it on the
+Billboard Hot 100.</li>
 </ul>
+<p>Load billboard100 R package.</p>
+<pre class="r"><code>#library(billboard100)</code></pre>
+<p>Run the function to generate a table with N number of songs</p>
+<pre class="r"><code>#top_n_bb100(data = bb100, 10)</code></pre>
 </div>
-<div id="basic-usage" class="section level2">
-<h2>Basic Usage</h2>
-<p>Load billboard100 R package</p>
-<pre class="r"><code>library(billboard100)</code></pre>
-</div>
-<div id="package-proposal-phase-iii" class="section level2">
-<h2>Package Proposal Phase III</h2>
+<div id="package-proposal" class="section level2">
+<h2>Package Proposal</h2>
 <p>This package will scrape data from the billboard hot 100 website and
 change depending on the week that the user utilizes the package. Unlike
 this current phase, the phase III package will not have a dataset that
 it’s working from. Users can perform analyzes of the scraped data
-similarly to the current package version.</p>
+similarly to the current package version. Additionally, we will add
+functionalities like being able to create visualizations of the data and
+pull charts of data from certain years only.</p>
 </div>
 <div id="section" class="section level2">
 <h2></h2>

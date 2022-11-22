@@ -35,27 +35,18 @@ Functions inside the package:
 
 * top_n_bb100: return the top ’n’ artist whose made it on the Billboard Hot 100. 
 
-# Description 
-
-#Purpose
-
-#Dependencies/Setup 
-
-#Arguments 
-
 
 Load billboard100 R package. 
 
 ```{r}
-library(billboard100)
+#library(billboard100)
 ```
 
 Run the function to generate a table with N number of songs 
 
 ```{r}
-top_n_bb100(data = bb100, 10)
+#top_n_bb100(data = bb100, 10)
 ```
-
 
 
 ## Package Proposal 
