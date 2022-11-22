@@ -29,7 +29,7 @@ This package was made for anyone who find value in music stats. This package can
 ## Function
 
 Functions inside the package:
-* TopN_BB100: return the top ’n’ artist whose made it on the Billboard Hot 100. 
+* top_n_bb100: return the top ’n’ artist whose made it on the Billboard Hot 100. 
 
 # Description 
 

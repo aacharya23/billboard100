@@ -1,6 +1,6 @@
-#' Billboard Top 100 data set
+#' Billboard Hot 100 data set
 #'
-#' Top 100 Billboard songs from 08-04-1958 to 11-06-2021.
+#' Billboard Hot 100 songs from 08-04-1958 to 11-06-2021.
 #'
 #'
 #' @format ## `top100`

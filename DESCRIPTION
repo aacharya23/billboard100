@@ -5,7 +5,7 @@ Authors@R: c(
     person(given = "Amrita",
            family = "Acharya",
            role = c("aut", "cre"),
-           email = "aacharya@smith.edu", 
+           email = "aacharya@smith.edu"), 
     person(given = "Lillian",
            family = "Fok",
            role = "aut",
@@ -14,8 +14,8 @@ Authors@R: c(
            family = "Mateo",
            role = "aut",
            email = "bmateo@smith.edu")
-    ))
-Description: Pull the top N songs of all time from the Billboard Hot 100 Chart 
+    )
+Description: Analyze and Visualize Pop Music Data.
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
@@ -27,4 +27,5 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Imports: 
+    dplyr,
     magrittr
