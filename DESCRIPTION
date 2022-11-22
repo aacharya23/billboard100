@@ -1,10 +1,21 @@
-Package: billboard_100
-Title: What the Package Does (One Line, Title Case)
+Package: billboard100
+Title: Billboard Hot 100 
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person(given = "Amrita",
+           family = "Acharya",
+           role = c("aut", "cre"),
+           email = "aacharya@smith.edu", 
+    person(given = "Lillian",
+           family = "Fok",
+           role = "aut",
+           email = "lfok@smith.edu"),
+    person(given = "Brianna",
+           family = "Mateo",
+           role = "aut",
+           email = "bmateo@smith.edu")
+    )
+Description: Pull the top N songs of all time from the Billboard Hot 100 Chart 
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)

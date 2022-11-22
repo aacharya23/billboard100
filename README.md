@@ -1,58 +1,58 @@
-Amrita Acharya, Brianna Mateo
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Desktop
+## Overview
 
-<!-- badges: start -->
+The Billboard R package contains a dataset from the Billboard Hot 100
+and a function to visualize the top 5 artists of all time. This package
+has dependencies on tidyverse and ggplot2 in order to
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/Desktop)](https://CRAN.R-project.org/package=Desktop)
-<!-- badges: end -->
+\##Purpose Billboard_100 is an R package that contains datasets of the
+Billboard Chart Hot 100 acquired from(link), featuring the Hot 100
+charts for every week since its first premiere on Monday, Aug. 4, 1958.
+Finding data on music, artist, and chart numbers can be very daunting
+and a lot of time spent on Google. We have made Billboard_100 to keep
+everything all in one place.
 
-The goal of Desktop is to …
+\##Target Audience This package was made for anyone who find value in
+music stats. This package can easily be used for data analysis and
+provide actionable insights for artists, record labels, or anyone whose
+interested in the Billboard Hot 100.
 
-## Installation
+\##Installation
 
-You can install the development version of Desktop like so:
+## Function
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
-```
+Functions inside the package: \* TopN_BB100: return the top ’n’ artist
+whose made it on the Billboard Hot 100.
 
-## Example
+# Description
 
-This is a basic example which shows you how to solve a common problem:
+\#Purpose
 
-``` r
+\#Dependencies/Setup
+
+\#Arguments
+
+\#Result
+
 ## basic example code
-```
 
 What is special about using `README.Rmd` instead of just `README.md`?
 You can include R chunks like so:
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
+\#Code
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/v1/examples>.
+\#Examples
 
-You can also embed plots, for example:
+\#Testing
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+## Package Proposal
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+This package will scrape data from the billboard hot 100 website and
+change depending on the week that the user utilizes the package. Unlike
+this current phase, the phase III package will not have a dataset that
+it’s working from. Users can perform analyzes of the scraped data
+similarly to the current package version.
+
+## 
