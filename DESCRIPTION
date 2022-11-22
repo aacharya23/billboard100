@@ -14,7 +14,7 @@ Authors@R: c(
            family = "Mateo",
            role = "aut",
            email = "bmateo@smith.edu")
-    )
+    ))
 Description: Pull the top N songs of all time from the Billboard Hot 100 Chart 
 License: MIT + file LICENSE
 Suggests: 
