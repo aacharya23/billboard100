@@ -1,15 +1,9 @@
 ---
 output: github_document
-<<<<<<< HEAD
-author: 'Amrita Acharya, Brianna Mateo '
-=======
 author: 'Amrita Acharya'
 author: 'Brianna Mateo '
 author: 'Lillian Fok'
->>>>>>> 71787018d220223c2870f9fa1169c0b058b02a8c
----
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
