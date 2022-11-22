@@ -38,7 +38,12 @@ devtools::install_github("aacharya23/billboard100")
 Functions inside the package:
 * TopN_BB100: returns the top ’n’ artist whose made it on the Billboard Hot 100. 
 
+<<<<<<< HEAD
 ## Basic Usage 
+=======
+
+#Result 
+>>>>>>> edfed2c3dea43de5003ec9ebbb227200119ce3dc
 
 Load billboard100 R package. 
 
