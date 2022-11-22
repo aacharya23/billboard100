@@ -13,12 +13,7 @@ knitr::opts_chunk$set(
 
  
 ## Overview 
-The Billboard  R package contains a dataset from the Billboard Hot 100 and a function to generate a table of the top number artists of all time. Users can determine the number they'd like to find with this function. The package contains a dependency on tidyverse in order to clean the top100 dataset. 
 
-## Purpose 
-Billboard_100  is an R package that contains datasets of the Billboard Chart Hot 100 acquired from(link), featuring the Hot 100 charts for every week since its first premiere on Monday, Aug. 4, 1958. Finding data on music, artist, and chart numbers can be very daunting and a lot of time spent on Google.  We have made Billboard_100 to keep everything all in one place.  
-
-## Target Audience 
 This package was made for anyone who find value in music stats. This package can easily be used for data analysis and provide actionable insights for artists, record labels, or anyone whose interested in the Billboard Hot 100.
  
  
@@ -38,12 +33,6 @@ devtools::install_github("aacharya23/billboard100")
 Functions inside the package:
 * TopN_BB100: returns the top ’n’ artist whose made it on the Billboard Hot 100. 
 
-<<<<<<< HEAD
-## Basic Usage 
-=======
-
-#Result 
->>>>>>> edfed2c3dea43de5003ec9ebbb227200119ce3dc
 
 Load billboard100 R package. 
 
