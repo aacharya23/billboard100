@@ -4,9 +4,6 @@ author: 'Amrita Acharya'
 author: 'Brianna Mateo '
 author: 'Lillian Fok'
 
----
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
