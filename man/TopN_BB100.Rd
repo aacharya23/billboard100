@@ -7,7 +7,7 @@
 TopN_BB100(data = BB100, x)
 }
 \arguments{
-\item{data}{the billboard dataset of all top songs from all time used to calculate the top x number of songs}
+\item{data}{the billboard dataset of all top songs from all time}
 
 \item{x}{the number that the user inputs to find the top number of songs}
 }
