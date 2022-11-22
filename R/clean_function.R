@@ -2,7 +2,7 @@
 #'
 #'
 #'
-#' @param data the billboard dataset of all top songs from all time used to calculate the top x number of songs
+#' @param data the billboard dataset of all top songs from all time
 #' @param x the number that the user inputs to find the top number of songs
 #'
 #' @return 'TopN_BB100' returns a dataframe with x number of rows of top songs over time based on the user input
@@ -21,13 +21,13 @@
 TopN_BB100 <- function(data = BB100, x) {
 
 
-  BB100 <- charts %>%
+  BB100 <- top100 %>%
     select(-c(rank, date, last.week, weeks.on.board, peak.rank)) %>%
     group_by(artist) %>%
     summarize(count=n()) %>%
     dplyr::arrange(desc(count))
 
-  return(top_n(data, n = (x), wt = count))
+  return(top_n(BB100, n = (x), wt = count))
 
 }
 
