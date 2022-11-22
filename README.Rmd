@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 The Billboard  R package contains a dataset from the Billboard Hot 100 and a function to visualize the top 5 artists of all time. This package has dependencies on tidyverse and ggplot2 in order to 
 
 ##Purpose 
+hey
 
 ##Target Audience 
 
@@ -36,12 +37,6 @@ The Billboard  R package contains a dataset from the Billboard Hot 100 and a fun
 
 #Arguments 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 2a81994f17095edad55bcbb21dd22ba024f59d13
-
-
 ```{r}
 
 BB100<-charts %>% 
@@ -55,30 +50,16 @@ TopN_BB100 <- function(data = Top_BB100, x) {
 }
 
 TopN_BB100(data=BB100, 11)
-
-<<<<<<< HEAD
-=======
+```
 
 #Result 
 
 
 ## basic example code
->>>>>>> 2a81994f17095edad55bcbb21dd22ba024f59d13
-```
-
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-<<<<<<< HEAD
-```{r cars}
-=======
->>>>>>> 2a81994f17095edad55bcbb21dd22ba024f59d13
-
 #Code 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2a81994f17095edad55bcbb21dd22ba024f59d13
 
 #Examples 
 
