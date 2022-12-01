@@ -20,19 +20,19 @@
 #' @importFrom stringi stri_trans_general
 #' @export
 
-top_n_bb100 <- function(data = top100, x) {
+  top_n_bb100 <- function(data = top100, x) {
 
-  top100$artist <- stri_trans_general(top100$artist, "latin-ascii")
+    top100$artist <- stri_trans_general(top100$artist, "latin-ascii")
 
-  top100 <- top100 %>%
-    dplyr::select(song,artist) %>%
-    dplyr::group_by(artist) %>%
-    dplyr::summarize(count=n()) %>%
-    dplyr::arrange(desc(count))
+    top100 <- top100 %>%
+      dplyr::select(song,artist) %>%
+      dplyr::group_by(artist) %>%
+      dplyr::summarize(count=n()) %>%
+      dplyr::arrange(desc(count))
 
-  return(dplyr::top_n(top100, n = (x), wt = count))
+    return(dplyr::top_n(top100, n = (x), wt = count))
 
-}
+  }
 
 
 

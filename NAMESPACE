@@ -2,6 +2,7 @@
 
 export("%>%")
 export(top_n_bb100)
+export(visualize)
 importFrom(dplyr,arrange)
 importFrom(dplyr,group_by)
 importFrom(dplyr,n)
