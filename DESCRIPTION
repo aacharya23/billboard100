@@ -31,5 +31,6 @@ LazyData: true
 Imports: 
     dplyr,
     magrittr,
-    stringi
+    stringi,
+    ggplot2
 VignetteBuilder: knitr

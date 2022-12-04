@@ -15,3 +15,6 @@ ggplot object depicting the dataset
 \description{
 Visualize
 }
+\examples{
+example
+}
