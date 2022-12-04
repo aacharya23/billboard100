@@ -10,7 +10,7 @@ visualize(data)
 \item{data}{dataset with two variables of interest, output of the top_n function}
 }
 \value{
-ggplot object depicting the dataset
+ggplot geom_col object
 }
 \description{
 Visualize

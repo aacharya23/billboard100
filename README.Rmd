@@ -33,7 +33,8 @@ devtools::install_github("aacharya23/billboard100")
 
 Functions inside the package:
 
-* top_n_bb100: return the top ’n’ artist whose made it on the Billboard Hot 100. 
+* top_n: return the top ’n’ artist whose made it on the Billboard Hot 100.
+* visualize: visualize the output of top_n as a bar chart
 
 # Description 
 
@@ -53,7 +54,7 @@ library(billboard100)
 Run the function to generate a table with N number of songs 
 
 ```{r}
-top_n_bb100(data = bb100, 10)
+top_n(data = top100, 10)
 ```
 
 

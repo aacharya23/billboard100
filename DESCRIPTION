@@ -1,5 +1,5 @@
 Package: billboard100
-Title: Billboard Hot 100 
+Title: Billboard Chart Analysis and Visualization 
 Version: 0.0.0.9000
 Authors@R: c(
     person(given = "Amrita",
