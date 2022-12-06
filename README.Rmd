@@ -11,6 +11,11 @@ knitr::opts_chunk$set(
 )
 ```
 
+!-- badges: start -->
+  [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
+  <!-- badges: end
+
+
  
 ## Overview 
 billboard100 contains data from the Billboard Hot 100 dataset that contains all the songs that made this popular music chart since 1958. The functions in the package allow users to analyze the top N songs of all time. The package currently contains dependencies on dplyr.
