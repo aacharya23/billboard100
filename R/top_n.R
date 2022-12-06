@@ -30,8 +30,17 @@ globalVariables(c("song", "artist", "mapping"))
     top100$artist <- stri_trans_general(top100$artist, "latin-ascii")
     top100$song <- stri_trans_general(top100$song, "latin-ascii")
 
+    if (!(id %in% names(data))) {
+      stop(paste0(id, " not a variable in the data. \n"), call. = FALSE)
+    }
+
+    else if (!is.character(id)) {
+      stop(paste0(id, " Invalid input: id should be a character vector. \n"), call. = FALSE)
+    }
+
+
     #finding top artist based on number of times their song has charted
-    if (id == "artist") {
+    else if (id == "artist") {
       top100 <- top100 %>%
       group_by(artist) %>%
       summarize(count=n()) %>%
@@ -46,9 +55,6 @@ globalVariables(c("song", "artist", "mapping"))
       arrange(desc(count))
     }
 
-    else {
-      #throw error?
-    }
 
     return(dplyr::top_n(top100, n = (n), wt = count))
 
