@@ -1,7 +1,9 @@
 
-!– badges: start –\>
+<!-- badges: start -->
+
 [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
-\<!– badges: end
+<!-- badges: end -->
+
 
 ## Overview
 
@@ -22,8 +24,7 @@ Billboard Hot 100.
 
 ``` r
 devtools::install_github("aacharya23/billboard100")
-#> Skipping install of 'billboard100' from a github remote, the SHA1 (cda784aa) has not changed since last install.
-#>   Use `force = TRUE` to force installation
+
 ```
 
 ## Datasets Included
