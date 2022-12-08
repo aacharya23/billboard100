@@ -29,4 +29,5 @@ LazyData: true
 Imports: 
     dplyr,
     magrittr,
-    stringi
+    stringi,
+    stats

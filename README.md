@@ -4,12 +4,14 @@
 [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
+
 ## Overview
 
 billboard100 contains data from the Billboard Hot 100 dataset that
 contains all the songs that made this popular music chart since 1958.
 The functions in the package allow users to analyze the top N songs of
-all time. The package currently contains dependencies on dplyr.
+all time. The package currently contains dependencies on dplyr and
+magrittr.
 
 ## Target Audience
 
@@ -22,16 +24,7 @@ Billboard Hot 100.
 
 ``` r
 devtools::install_github("aacharya23/billboard100")
-#> Downloading GitHub repo aacharya23/billboard100@HEAD
-#> 
-#>      checking for file ‘/private/var/folders/0v/45nxndbd42v5v93r37g7qgj80000gn/T/RtmpglCsqc/remotes170257ceaa1fd/aacharya23-billboard100-0d30695/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/0v/45nxndbd42v5v93r37g7qgj80000gn/T/RtmpglCsqc/remotes170257ceaa1fd/aacharya23-billboard100-0d30695/DESCRIPTION’
-#>   ─  preparing ‘billboard100’:
-#>      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-#>   ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>   ─  building ‘billboard100_0.0.0.9000.tar.gz’
-#>      
-#> 
+
 ```
 
 ## Datasets Included

@@ -2,7 +2,6 @@
 output: github_document
 ---
 
-
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -19,7 +18,7 @@ knitr::opts_chunk$set(
 
  
 ## Overview 
-billboard100 contains data from the Billboard Hot 100 dataset that contains all the songs that made this popular music chart since 1958. The functions in the package allow users to analyze the top N songs of all time. The package currently contains dependencies on dplyr.
+billboard100 contains data from the Billboard Hot 100 dataset that contains all the songs that made this popular music chart since 1958. The functions in the package allow users to analyze the top N songs of all time. The package currently contains dependencies on dplyr and magrittr. 
 
 
 ## Target Audience
