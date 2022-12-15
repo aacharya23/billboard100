@@ -1,8 +1,4 @@
-## code to prepare `spotify` dataset goes here
-library(tidyverse)
-library(janitor)
+## code to prepare `/Users/amritaacharya/Downloads/tracks_data.csv` dataset goes here
 
-spotify <- read.csv("data-raw/spotify_attributes.csv") %>%
-  clean_names()
+readr::read_csv("/Users/amritaacharya/Downloads/tracks_data.csv")
 
-usethis::use_data(spotify, overwrite = TRUE)
