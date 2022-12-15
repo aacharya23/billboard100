@@ -52,8 +52,13 @@ globalVariables(c("song", "artist", "mapping"))
       stop(paste0("Invalid input: date should be in the format 'YYYY-MM-DD'"))
     }
 
+    #edge case 0
+    if (n == 0) {
+      return(c())
+    }
+
     #finding top artist based on number of times their song has charted
-    if (id == "artist") {
+    else if (id == "artist") {
       data <- data %>%
       group_by(artist) %>%
       summarize(count=n()) %>%
