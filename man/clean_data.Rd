@@ -19,7 +19,7 @@ Clean data that contain punctuation
 library(billboard100)
 
 # Clean any music dataset
-clean_data(data)
+clean_data(top100)
 
 
 }

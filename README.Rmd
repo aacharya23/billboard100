@@ -16,18 +16,17 @@ knitr::opts_chunk$set(
   <!-- badges: end
 
 
- 
-## Overview 
+Overview 
 billboard100 contains data from the Billboard Hot 100 dataset that contains all the songs that made this popular music chart since 1958. The functions in the package allow users to analyze the top N songs of all time. The package currently contains dependencies on dplyr and magrittr. 
 
 
-## Target Audience
+Target Audience
 This package was made for anyone who find value in music stats. This package can easily be used for data analysis and provide actionable insights for artists, record labels, or anyone who's interested in the Billboard Hot 100.
 
 
-## Installation 
+Installation 
 
-```{r}
+```{r, eval= FALSE}
 devtools::install_github("aacharya23/billboard100")
 ```
 
