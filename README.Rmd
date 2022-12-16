@@ -23,7 +23,7 @@ billboard100 contains data from the Billboard Hot 100 dataset that contains all 
 
 
 ## Target Audience
-This package was made for anyone who find value in music stats. This package can easily be used for data analysis and provide actionable insights for artists, record labels, or anyone who's interested in the Billboard Hot 100.
+This package was made for anyone who find value in music stats. This package can easily be used for data analysis and provide actionable insights for artists, record labels, or anyone who's interested in the Billboard Hot 100. 
 
 
 ## Installation 
@@ -52,6 +52,7 @@ Run the function to generate a table with N number of songs
 
 ```{r}
 #top_n_bb100(data = bb100, 10)
+
 ```
 
 
