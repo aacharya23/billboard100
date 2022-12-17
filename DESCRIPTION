@@ -32,5 +32,6 @@ Imports:
     dplyr,
     magrittr,
     stringi,
-    ggplot2
+    ggplot2,
+    tibble
 VignetteBuilder: knitr

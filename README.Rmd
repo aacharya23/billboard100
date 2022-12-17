@@ -28,7 +28,7 @@ devtools::install_github("aacharya23/billboard100")
 
 ## Datasets Included 
 * top100: A dataset that contains the date, song name, artist, current rank and past rank of the Billboard Hot 100 songs.
-* spotify_all: a randomizedsong and album 
+* spotify_all: a randomized song and album 
 
 ## Function
 
