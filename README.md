@@ -1,4 +1,6 @@
 
+# singR <img src='images/hex-singR.png' align="right" height="160"/>
+
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
@@ -56,6 +58,9 @@ library(singR)
 
 1.  Find the top 10 artists of all time.
 
+![Tutorial of how to use top_n
+function.](images/ezgif.com-gif-maker.gif)
+
 ``` r
 # Run the top_n function with the number 10 to find the top 10 artists of all time 
 top_n(id = "song", n = 10)
@@ -106,7 +111,8 @@ explicit_model(spotify_all, "year")
 #> F-statistic:  1472 on 1 and 69520 DF,  p-value: < 2.2e-16
 ```
 
-To learn more about how to use our package, watch the tutorial below.
+To learn more about how to use our package, you can view the full
+tutorial on YouTube [here](https://youtu.be/G8jblM8aEj0).
 
 ## Contributors
 
