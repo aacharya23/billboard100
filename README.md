@@ -6,17 +6,6 @@
 [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-<<<<<<< HEAD
-## Overview
-
-singR contains data from the Billboard Hot 100 chart and Spotify song
-and album music characteristics. This package features functions that
-allow users to perform elementary data analysis and visualization. The
-functions in the package allow users to analyze the top N songs of all
-time. The package currently contains dependencies on dplyr.
-
-## Target Audience
-=======
 ### Overview
 
 singR contains data from the Billboard Hot 100 chart and Spotify song
@@ -26,7 +15,6 @@ functions in the package allow users to analyze the top N songs of all
 time. The package currently contains dependencies on dplyr.
 
 ### Target Audience
->>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 
 This package was made for anyone who find value in music stats. This
 package can easily be used for data analysis and provide actionable
@@ -38,44 +26,21 @@ Billboard Hot 100.
 You can install singR from GitHub with:
 
 ``` r
-<<<<<<< HEAD
 devtools::install_github("aacharya23/singR")
-#> Skipping install of 'singR' from a github remote, the SHA1 (1e5529c5) has not changed since last install.
-#>   Use `force = TRUE` to force installation
-=======
-devtools::install_github("aacharya23/billboard100")
->>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 ```
 
 ### Datasets Included
 
-<<<<<<< HEAD
--   top100: A dataset that contains the date, song name, artist, current
-    rank and past rank of the Billboard Hot 100 songs.
--   spotify_all: a randomized song and album
-=======
 - `top100`: A dataset that contains the date, song name, artist, current
   rank and past rank of the Billboard Hot 100 songs.
 - `spotify_all`: a list of songs from Spotify including sound metrics
   like danceability, acousticness, and loudness, and album information
   like markets sold in and release date.
->>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 
 ### Functions Included
 
 Functions inside the package:
 
-<<<<<<< HEAD
--   top_n: find top artists and songs over a period of time on the
-    Billboard Hot 100 chart
--   visualize: visualize the output of top_n as a bar chart
--   explicit_model: create linear regression model of “explicit”
-    variable in the Spotify dataset
-
-Load singR R package.
-
-``` r
-=======
 - `top_n`: find top artists and songs over a period of time on the
   Billboard Hot 100 chart
 - `visualize`: visualize the output of top_n as a bar chart
@@ -88,7 +53,6 @@ Load singR R package.
 
 ``` r
 # Load the package 
->>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 library(singR)
 ```
 
@@ -98,17 +62,6 @@ library(singR)
 function.](images/ezgif.com-gif-maker.gif)
 
 ``` r
-<<<<<<< HEAD
-top_n(id = "song", n = 5)
-#> # A tibble: 5 × 2
-#>   song    count
-#>   <chr>   <int>
-#> 1 Stay      224
-#> 2 Angel     205
-#> 3 Hold On   202
-#> 4 You       195
-#> 5 Heaven    194
-=======
 # Run the top_n function with the number 10 to find the top 10 artists of all time 
 top_n(id = "song", n = 10)
 #> # A tibble: 10 × 2
@@ -124,14 +77,10 @@ top_n(id = "song", n = 10)
 #>  8 Without You   174
 #>  9 Forever       164
 #> 10 Happy         157
->>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 ```
 
 2.  View the top 10 artists and their album type as a bar chart.
 
-<<<<<<< HEAD
-## 
-=======
 ``` r
 visualize(spotify_all)
 ```
@@ -170,4 +119,3 @@ tutorial on YouTube [here](https://youtu.be/G8jblM8aEj0).
 - Amrita Acharya
 - Lillian Fok
 - Brianna Mateo
->>>>>>> 10845f2756fc471470db958206f3b5562460baa0
