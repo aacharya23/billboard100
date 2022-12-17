@@ -35,5 +35,6 @@ Imports:
     ggplot2,
     tibble,
     stats
+    utils
 VignetteBuilder: knitr
 
