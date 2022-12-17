@@ -1,4 +1,4 @@
-globalvariables(c("artist", "count", "desc", "song", "spotify_all"))
+globalVariables(c("spotify_all"))
 
 #' Build a regression of the music data
 #'

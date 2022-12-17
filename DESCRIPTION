@@ -1,5 +1,5 @@
-Package: billboard100
-Title: Billboard Chart Analysis and Visualization 
+Package: singR
+Title: Pop Music Analysis and Visualization 
 Version: 0.0.0.9000
 Authors@R: c(
     person(given = "Amrita",
@@ -15,7 +15,7 @@ Authors@R: c(
            role = "aut",
            email = "bmateo@smith.edu")
     )
-Description: Analyze and Visualize Pop Music Data.
+Description: Analyze and Visualize Billboard and Spotify Music Data.
 License: MIT + file LICENSE
 Suggests: 
     knitr,
@@ -32,6 +32,8 @@ Imports:
     dplyr,
     magrittr,
     stringi,
-    ggplot2
+    ggplot2,
+    tibble,
+    stats
 VignetteBuilder: knitr
 
