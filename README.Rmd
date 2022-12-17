@@ -56,7 +56,7 @@ library(singR)
 Run the function to generate a table with N number of songs 
 
 ```{r}
-top_n(data = top100, 10)
+top_n(id = "song", n = 5)
 
 ```
 

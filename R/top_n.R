@@ -1,6 +1,6 @@
 globalVariables(c("song", "artist", "mapping"))
 
-#' Find top x songs of all time
+#' Find top n songs or artists within a time period
 #'
 #'
 #'
@@ -12,12 +12,12 @@ globalVariables(c("song", "artist", "mapping"))
 #' @return a dataframe with x number of rows of top songs over time
 #'
 #' @examples
-#' library(billboard100)
+#' library(singR)
 #'
 #' # Find the top 10 songs of all time
 #' top_n(id = "song", n = 10)
 #'
-#' # Find the top 5 artists between "2000-01-01" and "2001-01-01"
+#' # Find the top 5 artists between 2000-01-01 and 2001-01-01
 #' top_n(id = "artist", n = 5, date_start = "2000-01-01", date_end = "2001-01-01")
 #'
 #' @import dplyr

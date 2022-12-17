@@ -2,7 +2,7 @@
 % Please edit documentation in R/top_n.R
 \name{top_n}
 \alias{top_n}
-\title{Find top x songs of all time}
+\title{Find top n songs or artists within a time period}
 \usage{
 top_n(data = top100, id, n, date_start = "1958-08-04", date_end = "2021-11-06")
 }
@@ -21,15 +21,15 @@ top_n(data = top100, id, n, date_start = "1958-08-04", date_end = "2021-11-06")
 a dataframe with x number of rows of top songs over time
 }
 \description{
-Find top x songs of all time
+Find top n songs or artists within a time period
 }
 \examples{
-library(billboard100)
+library(singR)
 
 # Find the top 10 songs of all time
 top_n(id = "song", n = 10)
 
-# Find the top 5 artists between "2000-01-01" and "2001-01-01"
+# Find the top 5 artists between 2000-01-01 and 2001-01-01
 top_n(id = "artist", n = 5, date_start = "2000-01-01", date_end = "2001-01-01")
 
 }

@@ -1,4 +1,5 @@
 library(tidyverse)
+library(tibble)
 
 expected_df <- tibble(
   song = c("Stay", "Angel"),
@@ -16,7 +17,6 @@ test_that("top n function",
               singR::top_n(id = "song", n = 2), expected_df1
             )
           }
-
 
 )
 

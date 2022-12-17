@@ -4,14 +4,13 @@
 [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-
 ## Overview
 
-billboard100 contains data from the Billboard Hot 100 dataset that
-contains all the songs that made this popular music chart since 1958.
-The functions in the package allow users to analyze the top N songs of
-all time. The package currently contains dependencies on dplyr and
-magrittr.
+singR contains data from the Billboard Hot 100 chart and Spotify song
+and album music characteristics. This package features functions that
+allow users to perform elementary data analysis and visualization. The
+functions in the package allow users to analyze the top N songs of all
+time. The package currently contains dependencies on dplyr.
 
 ## Target Audience
 
@@ -23,42 +22,47 @@ Billboard Hot 100.
 ## Installation
 
 ``` r
-devtools::install_github("aacharya23/billboard100")
-
+devtools::install_github("aacharya23/singR")
+#> Skipping install of 'singR' from a github remote, the SHA1 (1e5529c5) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 ```
 
 ## Datasets Included
 
-- top100: A dataset that contains the date, song name, artist, current
-  rank and past rank of the Billboard Hot 100 songs.
+-   top100: A dataset that contains the date, song name, artist, current
+    rank and past rank of the Billboard Hot 100 songs.
+-   spotify_all: a randomized song and album
 
 ## Function
 
 Functions inside the package:
 
-- top_n\_bb100: return the top ’n’ artist whose made it on the Billboard
-  Hot 100.
+-   top_n: find top artists and songs over a period of time on the
+    Billboard Hot 100 chart
+-   visualize: visualize the output of top_n as a bar chart
+-   explicit_model: create linear regression model of “explicit”
+    variable in the Spotify dataset
 
-Load billboard100 R package.
+Load singR R package.
 
 ``` r
-#library(billboard100)
+library(singR)
 ```
 
 Run the function to generate a table with N number of songs
 
 ``` r
-#top_n_bb100(data = bb100, 10)
+top_n(id = "song", n = 5)
+#> # A tibble: 5 × 2
+#>   song    count
+#>   <chr>   <int>
+#> 1 Stay      224
+#> 2 Angel     205
+#> 3 Hold On   202
+#> 4 You       195
+#> 5 Heaven    194
 ```
 
 ## Package Proposal
-
-This package will scrape data from the billboard hot 100 website and
-change depending on the week that the user utilizes the package. Unlike
-this current phase, the phase III package will not have a dataset that
-it’s working from. Users can perform analyzes of the scraped data
-similarly to the current package version. Additionally, we will add
-functionalities like being able to create visualizations of the data and
-pull charts of data from certain years only.
 
 ## 

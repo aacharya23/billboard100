@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 globalVariables(c("spotify_all"))
-=======
-utils::globalvariables(c("artist", "count", "desc", "song"))
->>>>>>> 13e1b7c040fb741654e6d1dcff86a4672189dc26
+
 
 #' Build a regression of the music data
 #'
@@ -13,7 +10,7 @@ utils::globalvariables(c("artist", "count", "desc", "song"))
 #' @return 'explicit_model' returns a linear regression model that predicts
 #'
 #' @examples
-#' library(billboard100)
+#' library(singR)
 #'
 #' # Build a regression model of spotify data
 #' explicit_model(data)

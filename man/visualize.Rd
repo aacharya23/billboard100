@@ -17,4 +17,11 @@ Visualize
 }
 \examples{
 example
+library(singR)
+
+#Visualize top 4 songs between 1990-01-01 and 1995-01-01
+ex <- top_n(id = "song", n = 4, date_start = "1990-01-01", date_end = "1995-01-01")
+visualize(ex)
+
+
 }
