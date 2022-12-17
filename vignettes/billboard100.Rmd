@@ -1,0 +1,22 @@
+---
+title: "billboard100"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{billboard100}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+A music analysis package containing data from the Billboard Hot100 charts. Clean, wrangle, and visualize music data with ease. 
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(billboard100)
+```
+This is my vignette
