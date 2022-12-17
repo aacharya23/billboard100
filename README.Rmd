@@ -1,6 +1,6 @@
 ---
 output: github_document
-
+---
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -11,9 +11,15 @@ knitr::opts_chunk$set(
 )
 ```
 
+
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
  
 ## Overview 
 singR contains data from the Billboard Hot 100 chart and Spotify song and album music characteristics. This package features functions that allow users to perform elementary data analysis and visualization. The functions in the package allow users to analyze the top N songs of all time. The package currently contains dependencies on dplyr.
+
 
 
 ## Target Audience
@@ -38,27 +44,20 @@ Functions inside the package:
 * visualize: visualize the output of top_n as a bar chart
 * explicit_model: create linear regression model of "explicit" variable in the Spotify dataset 
 
-# Description 
-
-#Purpose
-
-#Dependencies/Setup 
-
-#Arguments 
-
 
 Load singR R package. 
 
 ```{r}
 library(singR)
+
 ```
 
 Run the function to generate a table with N number of songs 
 
 ```{r}
 top_n(data = top100, 10)
-```
 
+```
 
 
 ## Package Proposal 

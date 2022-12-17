@@ -33,5 +33,10 @@ Imports:
     magrittr,
     stringi,
     ggplot2,
+<<<<<<< HEAD
     tibble
+=======
+    stats
+>>>>>>> f12de7b319cc07c90712f33b672af6474d613de2
 VignetteBuilder: knitr
+
