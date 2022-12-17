@@ -12,7 +12,7 @@ globalVariables(c("song", "artist", "mapping"))
 #' @return a dataframe with x number of rows of top songs over time
 #'
 #' @examples
-#' library(billboard100)
+#' library(singR)
 #'
 #' # Find the top 10 songs of all time
 #' top_n(id = "song", n = 10)

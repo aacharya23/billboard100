@@ -24,7 +24,7 @@ a dataframe with x number of rows of top songs over time
 Find top x songs of all time
 }
 \examples{
-library(billboard100)
+library(singR)
 
 # Find the top 10 songs of all time
 top_n(id = "song", n = 10)

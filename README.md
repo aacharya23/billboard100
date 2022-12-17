@@ -4,61 +4,112 @@
 [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
+### Overview
 
-## Overview
+singR contains data from the Billboard Hot 100 chart and Spotify song
+and album music characteristics. This package features functions that
+allow users to perform elementary data analysis and visualization. The
+functions in the package allow users to analyze the top N songs of all
+time. The package currently contains dependencies on dplyr.
 
-billboard100 contains data from the Billboard Hot 100 dataset that
-contains all the songs that made this popular music chart since 1958.
-The functions in the package allow users to analyze the top N songs of
-all time. The package currently contains dependencies on dplyr and
-magrittr.
-
-## Target Audience
+### Target Audience
 
 This package was made for anyone who find value in music stats. This
 package can easily be used for data analysis and provide actionable
 insights for artists, record labels, or anyone who’s interested in the
 Billboard Hot 100.
 
-## Installation
+### Installation
+
+You can install singR from GitHub with:
 
 ``` r
 devtools::install_github("aacharya23/billboard100")
-
 ```
 
-## Datasets Included
+### Datasets Included
 
-- top100: A dataset that contains the date, song name, artist, current
+- `top100`: A dataset that contains the date, song name, artist, current
   rank and past rank of the Billboard Hot 100 songs.
+- `spotify_all`: a list of songs from Spotify including sound metrics
+  like danceability, acousticness, and loudness, and album information
+  like markets sold in and release date.
 
-## Function
+### Functions Included
 
 Functions inside the package:
 
-- top_n\_bb100: return the top ’n’ artist whose made it on the Billboard
-  Hot 100.
+- `top_n`: find top artists and songs over a period of time on the
+  Billboard Hot 100 chart
+- `visualize`: visualize the output of top_n as a bar chart
+- `explicit_model`: create linear regression model of “explicit”
+  variable in the Spotify dataset
 
-Load billboard100 R package.
+### Package Usage Examples
+
+Load singR R package.
 
 ``` r
-#library(billboard100)
+# Load the package 
+library(singR)
 ```
 
-Run the function to generate a table with N number of songs
+1.  Find the top 10 artists of all time.
 
 ``` r
-#top_n_bb100(data = bb100, 10)
+# Run the top_n function with the number 10 to find the top 10 artists of all time 
+top_n(id = "song", n = 10)
+#> # A tibble: 10 × 2
+#>    song        count
+#>    <chr>       <int>
+#>  1 Stay          224
+#>  2 Angel         205
+#>  3 Hold On       202
+#>  4 You           195
+#>  5 Heaven        194
+#>  6 I Like It     188
+#>  7 Crazy         176
+#>  8 Without You   174
+#>  9 Forever       164
+#> 10 Happy         157
 ```
 
-## Package Proposal
+2.  View the top 10 artists and their album type as a bar chart.
 
-This package will scrape data from the billboard hot 100 website and
-change depending on the week that the user utilizes the package. Unlike
-this current phase, the phase III package will not have a dataset that
-it’s working from. Users can perform analyzes of the scraped data
-similarly to the current package version. Additionally, we will add
-functionalities like being able to create visualizations of the data and
-pull charts of data from certain years only.
+``` r
+visualize(spotify_all)
+```
 
-## 
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" /> 3.
+Regression model that finds whether year is a significant predictor for
+the explicitness of a song.
+
+``` r
+explicit_model(spotify_all, "year")
+#> 
+#> Call:
+#> lm(formula = explicit ~ year, data = spotify_all)
+#> 
+#> Residuals:
+#>      Min       1Q   Median       3Q      Max 
+#> -0.10835 -0.06441 -0.05089 -0.03399  1.04712 
+#> 
+#> Coefficients:
+#>               Estimate Std. Error t value Pr(>|t|)    
+#> (Intercept) -6.719e+00  1.765e-01  -38.08   <2e-16 ***
+#> year         3.380e-03  8.809e-05   38.37   <2e-16 ***
+#> ---
+#> Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+#> 
+#> Residual standard error: 0.2179 on 69520 degrees of freedom
+#> Multiple R-squared:  0.02073,    Adjusted R-squared:  0.02072 
+#> F-statistic:  1472 on 1 and 69520 DF,  p-value: < 2.2e-16
+```
+
+To learn more about how to use our package, watch the tutorial below.
+
+## Contributors
+
+- Amrita Acharya
+- Lillian Fok
+- Brianna Mateo

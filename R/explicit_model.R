@@ -9,10 +9,10 @@ globalVariables(c("spotify_all"))
 #' @return 'explicit_model' returns a linear regression model that predicts
 #'
 #' @examples
-#' library(billboard100)
+#' library(singR)
 #'
 #' # Build a regression model of spotify data
-#' explicit_model(data)
+#' explicit_model(data, "year")
 #'
 #' @import utils
 #' @importFrom stats "lm"

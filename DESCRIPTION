@@ -34,7 +34,7 @@ Imports:
     stringi,
     ggplot2,
     tibble,
-    stats
+    stats,
     utils
 VignetteBuilder: knitr
 
