@@ -15,20 +15,18 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
   [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
-
  
 ## Overview 
 singR contains data from the Billboard Hot 100 chart and Spotify song and album music characteristics. This package features functions that allow users to perform elementary data analysis and visualization. The functions in the package allow users to analyze the top N songs of all time. The package currently contains dependencies on dplyr.
 
 
-
-## Target Audience
+Target Audience
 This package was made for anyone who find value in music stats. This package can easily be used for data analysis and provide actionable insights for artists, record labels, or anyone who's interested in the Billboard Hot 100.
 
 
-## Installation 
+Installation 
 
-```{r}
+```{r, eval= FALSE}
 devtools::install_github("aacharya23/billboard100")
 ```
 
