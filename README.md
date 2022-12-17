@@ -1,9 +1,12 @@
 
+# singR <img src='images/hex-singR.png' align="right" height="160"/>
+
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aacharya23/billboard_music/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
+<<<<<<< HEAD
 ## Overview
 
 singR contains data from the Billboard Hot 100 chart and Spotify song
@@ -13,30 +16,56 @@ functions in the package allow users to analyze the top N songs of all
 time. The package currently contains dependencies on dplyr.
 
 ## Target Audience
+=======
+### Overview
+
+singR contains data from the Billboard Hot 100 chart and Spotify song
+and album music characteristics. This package features functions that
+allow users to perform elementary data analysis and visualization. The
+functions in the package allow users to analyze the top N songs of all
+time. The package currently contains dependencies on dplyr.
+
+### Target Audience
+>>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 
 This package was made for anyone who find value in music stats. This
 package can easily be used for data analysis and provide actionable
 insights for artists, record labels, or anyone who’s interested in the
 Billboard Hot 100.
 
-## Installation
+### Installation
+
+You can install singR from GitHub with:
 
 ``` r
+<<<<<<< HEAD
 devtools::install_github("aacharya23/singR")
 #> Skipping install of 'singR' from a github remote, the SHA1 (1e5529c5) has not changed since last install.
 #>   Use `force = TRUE` to force installation
+=======
+devtools::install_github("aacharya23/billboard100")
+>>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 ```
 
-## Datasets Included
+### Datasets Included
 
+<<<<<<< HEAD
 -   top100: A dataset that contains the date, song name, artist, current
     rank and past rank of the Billboard Hot 100 songs.
 -   spotify_all: a randomized song and album
+=======
+- `top100`: A dataset that contains the date, song name, artist, current
+  rank and past rank of the Billboard Hot 100 songs.
+- `spotify_all`: a list of songs from Spotify including sound metrics
+  like danceability, acousticness, and loudness, and album information
+  like markets sold in and release date.
+>>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 
-## Function
+### Functions Included
 
 Functions inside the package:
 
+<<<<<<< HEAD
 -   top_n: find top artists and songs over a period of time on the
     Billboard Hot 100 chart
 -   visualize: visualize the output of top_n as a bar chart
@@ -46,12 +75,30 @@ Functions inside the package:
 Load singR R package.
 
 ``` r
+=======
+- `top_n`: find top artists and songs over a period of time on the
+  Billboard Hot 100 chart
+- `visualize`: visualize the output of top_n as a bar chart
+- `explicit_model`: create linear regression model of “explicit”
+  variable in the Spotify dataset
+
+### Package Usage Examples
+
+Load singR R package.
+
+``` r
+# Load the package 
+>>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 library(singR)
 ```
 
-Run the function to generate a table with N number of songs
+1.  Find the top 10 artists of all time.
+
+![Tutorial of how to use top_n
+function.](images/ezgif.com-gif-maker.gif)
 
 ``` r
+<<<<<<< HEAD
 top_n(id = "song", n = 5)
 #> # A tibble: 5 × 2
 #>   song    count
@@ -61,8 +108,66 @@ top_n(id = "song", n = 5)
 #> 3 Hold On   202
 #> 4 You       195
 #> 5 Heaven    194
+=======
+# Run the top_n function with the number 10 to find the top 10 artists of all time 
+top_n(id = "song", n = 10)
+#> # A tibble: 10 × 2
+#>    song        count
+#>    <chr>       <int>
+#>  1 Stay          224
+#>  2 Angel         205
+#>  3 Hold On       202
+#>  4 You           195
+#>  5 Heaven        194
+#>  6 I Like It     188
+#>  7 Crazy         176
+#>  8 Without You   174
+#>  9 Forever       164
+#> 10 Happy         157
+>>>>>>> 10845f2756fc471470db958206f3b5562460baa0
 ```
 
-## Package Proposal
+2.  View the top 10 artists and their album type as a bar chart.
 
+<<<<<<< HEAD
 ## 
+=======
+``` r
+visualize(spotify_all)
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" /> 3.
+Regression model that finds whether year is a significant predictor for
+the explicitness of a song.
+
+``` r
+explicit_model(spotify_all, "year")
+#> 
+#> Call:
+#> lm(formula = explicit ~ year, data = spotify_all)
+#> 
+#> Residuals:
+#>      Min       1Q   Median       3Q      Max 
+#> -0.10835 -0.06441 -0.05089 -0.03399  1.04712 
+#> 
+#> Coefficients:
+#>               Estimate Std. Error t value Pr(>|t|)    
+#> (Intercept) -6.719e+00  1.765e-01  -38.08   <2e-16 ***
+#> year         3.380e-03  8.809e-05   38.37   <2e-16 ***
+#> ---
+#> Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+#> 
+#> Residual standard error: 0.2179 on 69520 degrees of freedom
+#> Multiple R-squared:  0.02073,    Adjusted R-squared:  0.02072 
+#> F-statistic:  1472 on 1 and 69520 DF,  p-value: < 2.2e-16
+```
+
+To learn more about how to use our package, you can view the full
+tutorial on YouTube [here](https://youtu.be/G8jblM8aEj0).
+
+## Contributors
+
+- Amrita Acharya
+- Lillian Fok
+- Brianna Mateo
+>>>>>>> 10845f2756fc471470db958206f3b5562460baa0

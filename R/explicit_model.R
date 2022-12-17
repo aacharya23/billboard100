@@ -13,7 +13,7 @@ globalVariables(c("spotify_all"))
 #' library(singR)
 #'
 #' # Build a regression model of spotify data
-#' explicit_model(data)
+#' explicit_model(data, "year")
 #'
 #' @import utils
 #' @importFrom stats "lm"
