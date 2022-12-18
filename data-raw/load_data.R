@@ -15,13 +15,22 @@ usethis::use_data(top100, overwrite = TRUE)
 library(tidyverse)
 library(janitor)
 
-artists <- read_csv("data-raw/artists.csv") %>%
-  clean_names()
-
-albums <- read_csv("data-raw/tracks_data.csv") %>%
-  clean_names()
-
-spotify_all <- albums %>%
-  left_join(artists, by = c("album_id"="id"))
+spotify_all <- read_csv("data-raw/tracks_data.csv") %>%
+  clean_names() %>%
+  select(name,
+         album,
+         artists,
+         explicit,
+         danceability,
+         energy,
+         key,
+         speechiness,
+         acousticness,
+         instrumentalness,
+         liveness,
+         valence,
+         tempo,
+         year,
+         release_date)
 
 usethis::use_data(spotify_all, overwrite = TRUE)

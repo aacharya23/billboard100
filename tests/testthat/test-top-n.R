@@ -1,7 +1,6 @@
-library(tidyverse)
-library(tibble)
+library(dplyr)
 
-expected_df <- tibble(
+expected_df <- dplyr::tibble(
   song = c("Stay", "Angel"),
   count = c(224, 205)
 )
@@ -12,13 +11,8 @@ expected_df1 <- tibble::tibble(
 )
 
 test_that("top n function",
-          {
-            expect_equal(
-              singR::top_n(id = "song", n = 2), expected_df1
-            )
-          }
-
-)
+          {expect_equal(singR::top_n(id = "song", n = 2),
+                        expected_df1)})
 
 
 expected_df2 <- c()
