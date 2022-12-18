@@ -12,14 +12,15 @@ singR contains data from the Billboard Hot 100 chart and Spotify song
 and album music characteristics. This package features functions that
 allow users to perform elementary data analysis and visualization. The
 functions in the package allow users to analyze the top N songs of all
-time. The package currently contains dependencies on dplyr.
+time, visualize it and run a regression model predicting explicitness of
+songs based on user inputted variables. The package currently contains
+dependencies on dplyr, stats and ggplot2.
 
 ### Target Audience
 
 This package was made for anyone who find value in music stats. This
 package can easily be used for data analysis and provide actionable
-insights for artists, record labels, or anyone who’s interested in the
-Billboard Hot 100.
+insights on artists, albums and market popularity.
 
 ### Installation
 
@@ -63,26 +64,14 @@ function.](R/images/ezgif.com-gif-maker.gif)
 
 ``` r
 # Run the top_n function with the number 10 to find the top 10 artists of all time 
-top_n(id = "song", n = 10)
-#> # A tibble: 10 × 2
-#>    song        count
-#>    <chr>       <int>
-#>  1 Stay          224
-#>  2 Angel         205
-#>  3 Hold On       202
-#>  4 You           195
-#>  5 Heaven        194
-#>  6 I Like It     188
-#>  7 Crazy         176
-#>  8 Without You   174
-#>  9 Forever       164
-#> 10 Happy         157
+ex<- top_n(id = "song", n = 10)
 ```
 
-2.  View the top 10 artists and their album type as a bar chart.
+2.  View the top 10 songs and the number of weeks they’ve charted as a
+    bar chart.
 
 ``` r
-visualize(spotify_all)
+visualize(ex)
 ```
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" /> 3.

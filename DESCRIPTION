@@ -20,12 +20,8 @@ License: MIT + file LICENSE
 Suggests: 
     knitr,
     rmarkdown,
-<<<<<<< HEAD
-    testthat (>= 3.0.0)
-=======
     testthat (>= 3.0.0),
     tibble
->>>>>>> 86931a9ea82c20bda09071cd101b35e4c9c7c9d8
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -36,10 +32,8 @@ LazyData: true
 Imports: 
     dplyr,
     magrittr,
-<<<<<<< HEAD
     stringi
-VignetteBuilder: knitr
-=======
+VignetteBuilder: knitr,
     stringi,
     ggplot2,
     stats,
@@ -47,4 +41,4 @@ VignetteBuilder: knitr
 VignetteBuilder: knitr
 LazyDataCompression: xz
 
->>>>>>> 86931a9ea82c20bda09071cd101b35e4c9c7c9d8
+

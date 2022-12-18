@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# singR <img src='R/images/HexSticker.png' align="right" height="160"/>
+# singR <img src='R/images/hex-singR.png' align="right" height="160"/>
 
 
 <!-- badges: start -->
@@ -19,16 +19,11 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
  
 ### Overview
-singR contains data from the Billboard Hot 100 chart and Spotify song and album music characteristics. This package features functions that allow users to perform elementary data analysis and visualization. The functions in the package allow users to analyze the top N songs of all time. The package currently contains dependencies on dplyr.
+singR contains data from the Billboard Hot 100 chart and Spotify song and album music characteristics. This package features functions that allow users to perform elementary data analysis and visualization. The functions in the package allow users to analyze the top N songs of all time, visualize it and run a regression model predicting explicitness of songs based on user inputted variables. The package currently contains dependencies on dplyr, stats and ggplot2. 
 
 
-<<<<<<< HEAD
-## Target Audience
-This package was made for anyone who find value in music stats. This package can easily be used for data analysis and provide actionable insights for artists, record labels, or anyone who's interested in the Billboard Hot 100. 
-=======
 ### Target Audience
-This package was made for anyone who find value in music stats. This package can easily be used for data analysis and provide actionable insights for artists, record labels, or anyone who's interested in the Billboard Hot 100.
->>>>>>> 86931a9ea82c20bda09071cd101b35e4c9c7c9d8
+This package was made for anyone who find value in music stats. This package can easily be used for data analysis and provide actionable insights on artists, albums and market popularity. 
 
 
 ### Installation 
@@ -74,12 +69,7 @@ visualize(ex)
 ```
 3. Regression model that finds whether year is a significant predictor for the explicitness of a song. 
 ```{r}
-<<<<<<< HEAD
-#top_n_bb100(data = bb100, 10)
-
-=======
 explicit_model(spotify_all, "year")
->>>>>>> 86931a9ea82c20bda09071cd101b35e4c9c7c9d8
 ```
 
 To learn more about how to use our package, you can view the full tutorial on YouTube [here](https://youtu.be/G8jblM8aEj0).
