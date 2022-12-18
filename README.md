@@ -1,5 +1,5 @@
 
-# singR <img src='images/hex-singR.png' align="right" height="160"/>
+# singR <img src='R/images/hex-singR.png' align="right" height="160"/>
 
 <!-- badges: start -->
 
@@ -59,7 +59,7 @@ library(singR)
 1.  Find the top 10 artists of all time.
 
 ![Tutorial of how to use top_n
-function.](images/ezgif.com-gif-maker.gif)
+function.](R/images/ezgif.com-gif-maker.gif)
 
 ``` r
 # Run the top_n function with the number 10 to find the top 10 artists of all time 
