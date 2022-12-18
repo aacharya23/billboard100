@@ -32,11 +32,9 @@ LazyData: true
 Imports: 
     dplyr,
     magrittr,
-    stringi
-VignetteBuilder: knitr,
     stringi,
     ggplot2,
-    stats,
+    stats, 
     utils
 VignetteBuilder: knitr
 LazyDataCompression: xz
