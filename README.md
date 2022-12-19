@@ -1,5 +1,5 @@
 
-# singR <img src='R/images/hex-singR.png' align="right" height="160"/>
+# singR <img src='R/images/hex--2.png' align="right" height="160"/>
 
 <!-- badges: start -->
 
